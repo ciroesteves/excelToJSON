@@ -40,7 +40,7 @@ if (!empty($_FILES['arquivo']['tmp_name'])) {
         <form action="excelToJSON.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="arquivo">Arquivo:</label>
-                <input type="file" id="arquivo" name="arquivo">
+                <input type="file" id="arquivo" name="arquivo"  accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
             </div>
             <input type="submit" value="Transformar">
         </form>
